@@ -15,10 +15,10 @@ autocmd! bufwritepost vimrc.vim source %
 " Allow ^V in the console.
 
 if !has("gui_running")
-  vmap <C-c> "+y
-
-  vmap <C-v> "+p
-  imap <C-v> <Esc>"+pi
+  vmap <C-c>  "+y
+  vmap <C-v>  "+p
+  vmap <Enter>    <Esc>i<Enter><Esc>v 
+  imap <C-v>  <Esc>"+pi
 end
 
 " == Number toggle ===========================================================
@@ -164,8 +164,8 @@ set timeout timeoutlen=1000 ttimeoutlen=100
 
 " == Auto cursorline =========================================================
 
-autocmd InsertLeave * se nocursorline
-autocmd InsertEnter * se cursorline
+" autocmd InsertLeave * se nocursorline
+" autocmd InsertEnter * se cursorline
 
 " == Cursor changes in tmux ==================================================
 " Use a bar-shaped cursor for insert mode, even through tmux.

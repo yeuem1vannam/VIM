@@ -11,7 +11,8 @@ if !has("gui_running")
       " color dante
       " color jellybeans+
       " color vydark+
-      color snap-vydark+
+      " color snap-vydark+
+      color molokai
     else
       color snap-vydark+
     endif

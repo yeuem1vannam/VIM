@@ -2,7 +2,12 @@
 
 set encoding=utf-8              "enc:   Character encoding
 set backspace=indent,eol,start  "bs:    Backspacing over insert mode
-set history=50                  "hi:    keep 50 lines of command line history
+set history=1000                  "hi:    keep 50 lines of command line history
+set undolevels=1000             " use many muchos levels of undo
+if v:version >= 730
+  set undofile                " keep a persistent backup file
+  set undodir=~/.vim/.undo,~/tmp,/tmp
+endif
 set ruler                       "ru:    show the cursor position all the time
 set showcmd                     "sc:    display incomplete commands
 set incsearch                   "is:    do incremental searching
@@ -10,7 +15,9 @@ set hidden                      "hid:   Don't care about closing modified buffer
 set winminheight=0              "wmh:   Allow showing windows as just status bars
 set mouse=a                     "       Enable the use of a mouse
 set nowrap
-
+set cursorcolumn
+set cursorline
+set clipboard=unnamedplus
 " == Folding =================================================================
 
 set foldmethod=syntax           "fdm:   fold by the indentation by default
@@ -26,7 +33,9 @@ set smartcase                   "scs:   ignores ignorecase when pattern contains
 set hlsearch                    "hls:   highlights search results; ctrl-n or :noh to unhighlight
 set gdefault                    "gd:    Substitute all matches in a line by default
 nmap <silent> <C-N> :silent noh<CR>
-
+" Jump to matching pairs easily, with Tab
+nnoremap <Tab> %
+vnoremap <Tab> %
 " == Programming =============================================================
 
 syntax on                       "syn:   syntax highlighting

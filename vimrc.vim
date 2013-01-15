@@ -9,7 +9,8 @@ set nocompatible
 filetype off
 set runtimepath+=~/.vim/bundle/vundle/
 call vundle#rc()
-
+set cursorline
+set cursorcolumn
 Bundle 'gmarik/vundle'
 " Vundler: Bundle organizer
 "  :BundleList          - list configured bundles
@@ -19,22 +20,22 @@ Bundle 'gmarik/vundle'
 
 " ============================================================================
 
-Bundle 'godlygeek/csapprox'
+" Bundle 'godlygeek/csapprox'
 " CSApprox: Make gvim-only colorschemes work transparently in terminal vim
 " This is a very slow plugin, so only enable (uncomment) it if you plan on
 " switching color schemes.
 "
-let g:CSApprox_verbose_level=0
+" let g:CSApprox_verbose_level=0
 
 " == Bundles =================================================================
 
-Bundle 'Lokaltog/vim-powerline'
+" Bundle 'Lokaltog/vim-powerline'
 " Powerline: cool status lines
-if has("gui_running") && has("gui_macvim")
-  let g:Powerline_symbols='fancy'
-endif
+" if has("gui_running") && has("gui_macvim")
+"   let g:Powerline_symbols='fancy'
+" endif
 
-let g:Powerline_colorscheme='solarized256'
+" let g:Powerline_colorscheme='solarized256'
 " lighter colors: let g:Powerline_colorscheme='solarized'
 " To reload: :PowerlineReloadColorscheme
 
@@ -273,4 +274,3 @@ endif
 " ============================================================================
 
 filetype plugin indent on
-
