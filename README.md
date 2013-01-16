@@ -37,7 +37,15 @@ install vim-gnome (for Ubuntu user only)
 
     sudo apt-get install vim-gnome
 
-Another usefull command
+Set auto wrap for long lines `bundle/options.vim`
+
+    set wrap
+
+Set max width of a line = 80 `after/ftplugin/markdown.vim`
+
+    set tw=80
+
+Another usefull command to see where an options was set
 
     :verbose
 
