@@ -45,7 +45,7 @@ Set max width of a line = 80 `after/ftplugin/markdown.vim`
 
     set tw=80
 
-Another usefull command to see where an options was set
+Another usefull command to see where an option was set
 
     :verbose
 
