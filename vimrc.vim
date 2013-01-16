@@ -19,7 +19,6 @@ Bundle 'gmarik/vundle'
 "  :BundleClean(!)      - confirm(or auto-approve) removal of unused bundles
 
 " ============================================================================
-
 Bundle 'godlygeek/csapprox'
 " CSApprox: Make gvim-only colorschemes work transparently in terminal vim
 " This is a very slow plugin, so only enable (uncomment) it if you plan on
@@ -28,6 +27,7 @@ Bundle 'godlygeek/csapprox'
 let g:CSApprox_verbose_level=0
 
 " == Bundles =================================================================
+Bundle 'tpope/vim-rails'
 
 Bundle 'Lokaltog/vim-powerline'
 " Powerline: cool status lines
