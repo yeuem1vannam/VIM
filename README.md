@@ -25,7 +25,7 @@ Copy and Paste in VISUAL mode using ("+y/"+p is enough but if you want more)
     Ctrl + V
 
 You also can Paste in INSERT mode by `Ctrl + V`
-Copy and Paste from xterm_clipboard, set in plugin/options.vim
+Copy and Paste from xterm_clipboard, set in `plugin/options.vim`
 
     set clipboard=unnamedplus
  
@@ -35,5 +35,9 @@ If your VIM already is 7.3+ but don't have xterm_clipboard, the easiest way is
 install vim-gnome (for Ubuntu user only)
 
     sudo apt-get install vim-gnome
+
+Another usefull command
+
+    :verbose
 
 That's it. Enjoy !
