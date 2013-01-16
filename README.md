@@ -25,6 +25,7 @@ Copy and Paste in VISUAL mode using ("+y/"+p is enough but if you want more)
     Ctrl + V
 
 You also can Paste in INSERT mode by `Ctrl + V`
+
 Copy and Paste from xterm_clipboard, set in `plugin/options.vim`
 
     set clipboard=unnamedplus
