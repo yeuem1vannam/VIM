@@ -14,6 +14,6 @@ if !has("gui_running")
       " color snap-vydark+
       color molokai
     else
-      color snap-vydark+
+      color molokai
     endif
 endif
