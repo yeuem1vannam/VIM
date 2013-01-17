@@ -37,7 +37,7 @@ install vim-gnome (for Ubuntu user only)
 
     sudo apt-get install vim-gnome
 
-Set auto wrap for long lines `bundle/options.vim`
+Set auto wrap for long lines `plugin/options.vim`
 
     set wrap
 
