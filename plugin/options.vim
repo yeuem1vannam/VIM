@@ -14,7 +14,7 @@ set incsearch                   "is:    do incremental searching
 set hidden                      "hid:   Don't care about closing modified buffers
 set winminheight=0              "wmh:   Allow showing windows as just status bars
 set mouse=a                     "       Enable the use of a mouse
-set nowrap
+set wrap
 set cursorcolumn
 set cursorline
 set clipboard=unnamedplus

@@ -6,3 +6,49 @@ Vim files!
     cd ~/.vim
     rake setup
 Source: `http://github.com/rstacruz/vimfiles`
+=======
+    vim
+    :BundleInstall
+    
+Source: `http://github.com/rstacruz/vimfiles`
+
+Note
+----
+Switch between screens using
+
+    Ctrl + <Up>
+    Ctrl + <Down>
+    Ctrl + <Left>
+    Ctrl + <Right>
+ 
+Copy and Paste in VISUAL mode using ("+y/"+p is enough but if you want more)
+  
+    Ctrl + C
+    Ctrl + V
+
+You also can Paste in INSERT mode by `Ctrl + V`
+
+Copy and Paste from xterm_clipboard, set in `plugin/options.vim`
+
+    set clipboard=unnamedplus
+ 
+Support only for VIM 7.3+ and included xterm_clipboard. You can `vim --version` 
+to check it.
+If your VIM already is 7.3+ but don't have xterm_clipboard, the easiest way is 
+install vim-gnome (for Ubuntu user only)
+
+    sudo apt-get install vim-gnome
+
+Set auto wrap for long lines `plugin/options.vim`
+
+    set wrap
+
+Set max width of a line = 80 `after/ftplugin/markdown.vim`
+
+    set tw=80
+
+Another usefull command to see where an option was set
+
+    :verbose
+
+That's it. Enjoy !

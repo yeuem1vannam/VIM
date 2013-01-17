@@ -53,10 +53,10 @@ map ,,. <C-W>30>
 " Pseudo-FuzzyFinder
 map E :e **/
 " Switch between splited screen
-" map <Up>    <C-W>k
-" map <Down>  <C-W>j
-" map <Left>  <C-W>h
-" map <Right> <C-W>
+map <C-Up>    <C-W>k
+map <C-Down>  <C-W>j
+map <C-Left>  <C-W>h
+map <C-Right> <C-W>l
 " map s   gh
 " map <Up>     gk
 " map <Down>   gj

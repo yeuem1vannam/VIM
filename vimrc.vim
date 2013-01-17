@@ -4,13 +4,10 @@
 "  \/  | |  | |  \ |___     Also see plugin/*.vim for the initializers
 "
 " ============================================================================
-
 set nocompatible
 filetype off
 set runtimepath+=~/.vim/bundle/vundle/
 call vundle#rc()
-set cursorline
-set cursorcolumn
 Bundle 'gmarik/vundle'
 " Vundler: Bundle organizer
 "  :BundleList          - list configured bundles
