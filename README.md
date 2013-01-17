@@ -5,8 +5,6 @@ Vim files!
     git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
     cd ~/.vim
     rake setup
-Source: `http://github.com/rstacruz/vimfiles`
-=======
     vim
     :BundleInstall
     
